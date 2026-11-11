@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking System</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <h1>Banking System</h1>
+        <p>Manage your accounts and transactions</p>
+    </header>
+
+    <main>
+
+        <section class="card">
+            <h2>Deposit Money</h2>
+
+            <input id="depositAccount" placeholder="Account Number">
+            <input id="depositAmount" type="number" placeholder="Amount in ₹">
+
+            <button id="depositBtn">Deposit</button>
+        </section>
+
+        <section class="card">
+            <h2>Withdraw Money</h2>
+
+            <input id="withdrawAccount" placeholder="Account Number">
+            <input id="withdrawAmount" type="number" placeholder="Amount in ₹">
+
+            <button id="withdrawBtn">Withdraw</button>
+        </section>
+
+        <section class="card">
+            <h2>Transfer Money</h2>
+
+            <input id="senderAccount" placeholder="Sender Account">
+            <input id="receiverAccount" placeholder="Receiver Account">
+            <input id="transferAmount" type="number" placeholder="Amount in ₹">
+
+            <button id="transferBtn">Transfer</button>
+        </section>
+
+        <section class="card">
+            <h2>Account Details</h2>
+            <div id="accountList"></div>
+        </section>
+
+        <section class="card">
+            <h2>Transaction Status</h2>
+            <p id="message">Welcome to your banking system.</p>
+        </section>
+
+    </main>
+
+    <script type="module" src="index.ts"></script>
+</body>
+</html>
